@@ -1,4 +1,4 @@
-# Saved-WiFi-Password-Grabber-Windows-
+# Saved-WiFi-Password-Grabber-Windows
 Script to gain saved passwords in windows just "<b>Run As Administrator</b>" 
 <h2>USB.bat</h2>
 <ul>
